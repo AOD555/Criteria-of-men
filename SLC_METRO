@@ -1,0 +1,18 @@
+// Percent of Men in criteria range
+
+#include <stdio.h>
+#include <math.h>
+
+float web_result = 0.0093;  // Web results for all Men in USA
+float SLC_METRO = 1240000; // Entire Population of SLC Metro
+float Female_percent = 0.496;    // percent of women in SCL METRO
+float HVM; // High Value Men
+
+
+int main()
+{
+
+    HVM = web_result * SLC_METRO* Female_percent;
+    printf("Number of Men that meet Criteria in SLC METRO area is %f",HVM);
+
+}
